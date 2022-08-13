@@ -1,0 +1,34 @@
+<html><head></head><body><script type="text/javascript" id="dcoder_script">//choose an operator for calculation 
+ const operator = prompt('Enter operator ( either +, -, * or / ): ');
+
+//Enter first num 
+const number1 = parseFloat(prompt('Enter first number: '));
+//Enter second num 
+const number2 = parseFloat(prompt('Enter second number: '));
+
+//Here you can see how the  operator perform a specific task
+switch(operator) {
+    case '+': //addition  
+         result = number1 + number2;
+        console.log(`${number1} + ${number2} = ${result}`);
+        break;
+
+    case '-': // subtraction 
+         result = number1 - number2;
+        console.log(`${number1} - ${number2} = ${result}`);
+        break;
+
+    case '*': // multiplication 
+         result = number1 * number2;
+        console.log(`${number1} * ${number2} = ${result}`);
+        break;
+
+    case '/': // division 
+         result = number1 / number2;
+        console.log(`${number1} / ${number2} = ${result}`);
+        break;
+
+    default: 
+        console.log('Invalid operator');// this message will show when you  mistaken in choosing given operator 
+        break;
+}</script></body></html>
